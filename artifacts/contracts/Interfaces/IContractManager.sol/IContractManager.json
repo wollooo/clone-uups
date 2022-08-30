@@ -1,0 +1,66 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IContractManager",
+  "sourceName": "contracts/Interfaces/IContractManager.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_cloneNumber",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_cloneAddress",
+          "type": "address"
+        }
+      ],
+      "name": "addClone",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_copyNumber",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_copyAddress",
+          "type": "address"
+        }
+      ],
+      "name": "addCopy",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_cloneNumber",
+          "type": "uint256"
+        }
+      ],
+      "name": "getCloneInterface",
+      "outputs": [
+        {
+          "internalType": "contract IMyTokenV1",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
