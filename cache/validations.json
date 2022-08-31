@@ -2,6 +2,906 @@
   "version": "3.2",
   "log": [
     {
+      "IStorage": {
+        "src": "contracts/Interfaces/IStorage.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "getValue()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IStorageFactory": {
+        "src": "contracts/Interfaces/IStorageFactory.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "createNewStorage(uint256)",
+          "getStorage(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "TestStorages": {
+        "src": "contracts/TestStorages.sol:11",
+        "version": {
+          "withMetadata": "f3b3f0fbf8ae9b47bba1226e2047929e4ca92924cb9eb225d20f2e74a1cc9faf",
+          "withoutMetadata": "a860c3748ae54bfdbaac04e40ccba889e6f70117e666241896f3e88da103fddb",
+          "linkedWithoutMetadata": "a860c3748ae54bfdbaac04e40ccba889e6f70117e666241896f3e88da103fddb"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "setAddresses(address)",
+          "storeTest(uint256,uint256)",
+          "getValueTest(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "storageFactory",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_contract(IStorageFactory)29",
+              "contract": "TestStorages",
+              "src": "contracts/TestStorages.sol:12"
+            }
+          ],
+          "types": {
+            "t_contract(IStorageFactory)29": {
+              "label": "contract IStorageFactory",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "5321087bc54d2b2885ddc1c5a455ae28b62e64441328b42de79445b09f6569f2",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      }
+    },
+    {
+      "IStorage": {
+        "src": "contracts/Interfaces/IStorage.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "getValue()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IStorageFactory": {
+        "src": "contracts/Interfaces/IStorageFactory.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "createNewStorage(uint256)",
+          "getStorage(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "TestStorages": {
+        "src": "contracts/TestStorages.sol:11",
+        "version": {
+          "withMetadata": "1d7d50ea2eb6d8a28af24803df00ec9ade25822d83dd70fafde54ba419a5001f",
+          "withoutMetadata": "b0117c343b7879c91d9dd69cb0077e08bc6969326413c13e8f96af1c30cd53a3",
+          "linkedWithoutMetadata": "b0117c343b7879c91d9dd69cb0077e08bc6969326413c13e8f96af1c30cd53a3"
+        },
+        "inherit": [],
+        "libraries": [
+          "console"
+        ],
+        "methods": [
+          "setAddresses(address)",
+          "storeTest(uint256,uint256)",
+          "getValueTest(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "storageFactory",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_contract(IStorageFactory)29",
+              "contract": "TestStorages",
+              "src": "contracts/TestStorages.sol:12"
+            }
+          ],
+          "types": {
+            "t_contract(IStorageFactory)29": {
+              "label": "contract IStorageFactory",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "5321087bc54d2b2885ddc1c5a455ae28b62e64441328b42de79445b09f6569f2",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      }
+    },
+    {
+      "IStorage": {
+        "src": "contracts/Interfaces/IStorage.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "getValue()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IStorageFactory": {
+        "src": "contracts/Interfaces/IStorageFactory.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "createNewStorage(uint256)",
+          "getStorage(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Storage": {
+        "src": "contracts/Storage.sol:12",
+        "version": {
+          "withMetadata": "7254a390c76b138ac2aa9a37dca8d7ccd277b4aa47213f10a506024c31dfb57f",
+          "withoutMetadata": "9bc66503d93c23e9be43900d91470945b51f8de7f77c9ed8bfff2b48d8581ca7",
+          "linkedWithoutMetadata": "9bc66503d93c23e9be43900d91470945b51f8de7f77c9ed8bfff2b48d8581ca7"
+        },
+        "inherit": [
+          "IStorage"
+        ],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "getValue()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Storage",
+              "src": "contracts/Storage.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "StorageFactory": {
+        "src": "contracts/StorageFactory.sol:14",
+        "version": {
+          "withMetadata": "e479f68a5d72ed3aecdf07a69baed693fa9e0d3a72e1c1a1d137f520bec76421",
+          "withoutMetadata": "6bb2d472a7924e62b7a6ab434f3331fe8be8e7975334f2cd55233e3f487f27f6",
+          "linkedWithoutMetadata": "6bb2d472a7924e62b7a6ab434f3331fe8be8e7975334f2cd55233e3f487f27f6"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "createNewStorage(uint256)",
+          "getStorage(uint256)",
+          "allStorages()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_storage",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_array(t_contract(Storage)55)dyn_storage",
+              "contract": "StorageFactory",
+              "src": "contracts/StorageFactory.sol:15"
+            }
+          ],
+          "types": {
+            "t_array(t_contract(Storage)55)dyn_storage": {
+              "label": "contract Storage[]",
+              "numberOfBytes": "32"
+            },
+            "t_contract(Storage)55": {
+              "label": "contract Storage",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "TestStorages": {
+        "src": "contracts/TestStorages.sol:11",
+        "version": {
+          "withMetadata": "32fb2900879c8a163af3607ae5b0aee90de5afac388b65c54f1455b2ec8aaf81",
+          "withoutMetadata": "f0e18bda50c9efbd0a9f2a80f176f86b69fba2a25a557aa177fd95b752e02bbf",
+          "linkedWithoutMetadata": "f0e18bda50c9efbd0a9f2a80f176f86b69fba2a25a557aa177fd95b752e02bbf"
+        },
+        "inherit": [],
+        "libraries": [
+          "console"
+        ],
+        "methods": [
+          "setAddresses(address)",
+          "storeTest(uint256,uint256)",
+          "retrieveTest(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "storageFactory",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_contract(IStorageFactory)29",
+              "contract": "TestStorages",
+              "src": "contracts/TestStorages.sol:12"
+            }
+          ],
+          "types": {
+            "t_contract(IStorageFactory)29": {
+              "label": "contract IStorageFactory",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "5321087bc54d2b2885ddc1c5a455ae28b62e64441328b42de79445b09f6569f2",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      }
+    },
+    {
+      "IStorage": {
+        "src": "contracts/Interfaces/IStorage.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IStorageFactory": {
+        "src": "contracts/Interfaces/IStorageFactory.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "createNewStorage(uint256)",
+          "getStorage(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "TestStorages": {
+        "src": "contracts/TestStorages.sol:11",
+        "version": {
+          "withMetadata": "404a3a24b1e11c001268465904f64f5c4e7401c6d96eadbab6270bb2d26efa99",
+          "withoutMetadata": "b63580a970b6d5511fa76d44af4186a8184eaebf26ec1bf039f3bde3c96bddee",
+          "linkedWithoutMetadata": "b63580a970b6d5511fa76d44af4186a8184eaebf26ec1bf039f3bde3c96bddee"
+        },
+        "inherit": [],
+        "libraries": [
+          "console"
+        ],
+        "methods": [
+          "setAddresses(address)",
+          "storeTest(uint256,uint256)",
+          "retrieveTest(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "storageFactory",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_contract(IStorageFactory)29",
+              "contract": "TestStorages",
+              "src": "contracts/TestStorages.sol:12"
+            }
+          ],
+          "types": {
+            "t_contract(IStorageFactory)29": {
+              "label": "contract IStorageFactory",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "5321087bc54d2b2885ddc1c5a455ae28b62e64441328b42de79445b09f6569f2",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      }
+    },
+    {
+      "IStorage": {
+        "src": "contracts/Interfaces/IStorage.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IStorageFactory": {
+        "src": "contracts/Interfaces/IStorageFactory.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "createNewStorage(uint256)",
+          "getStorage(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "TestStorages": {
+        "src": "contracts/TestStorages.sol:11",
+        "version": {
+          "withMetadata": "22f7e2863d371e410e449b3a0f1911ce8ba061e1f941e39a6583abc08764cd46",
+          "withoutMetadata": "64420a769bb8120a1fc8e22ff703c62a3ae81d96735a9f8546a482bc98154734",
+          "linkedWithoutMetadata": "64420a769bb8120a1fc8e22ff703c62a3ae81d96735a9f8546a482bc98154734"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "setAddresses(address)",
+          "storeTest(uint256,uint256)",
+          "retrieveTest(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "storageFactory",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_contract(IStorageFactory)29",
+              "contract": "TestStorages",
+              "src": "contracts/TestStorages.sol:12"
+            }
+          ],
+          "types": {
+            "t_contract(IStorageFactory)29": {
+              "label": "contract IStorageFactory",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "IStorage": {
+        "src": "contracts/Interfaces/IStorage.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IStorageFactory": {
+        "src": "contracts/Interfaces/IStorageFactory.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "createNewStorage(uint256)",
+          "getStorage(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "TestStorages": {
+        "src": "contracts/TestStorages.sol:11",
+        "version": {
+          "withMetadata": "643c9cceddf1d7d9f1c5809fec316ef0e6398e5de25bde23c62138ed47fad67b",
+          "withoutMetadata": "c326725575f252f2ddd85f0f6d9e8fd0f8ca3e64572f3d767ffd9367f59109a4",
+          "linkedWithoutMetadata": "c326725575f252f2ddd85f0f6d9e8fd0f8ca3e64572f3d767ffd9367f59109a4"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "setAddresses(address)",
+          "storeTest(uint256,uint256)",
+          "retrieveTest(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "storageFactory",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_contract(IStorageFactory)29",
+              "contract": "TestStorages",
+              "src": "contracts/TestStorages.sol:12"
+            }
+          ],
+          "types": {
+            "t_contract(IStorageFactory)29": {
+              "label": "contract IStorageFactory",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "IStorage": {
+        "src": "contracts/Interfaces/IStorage.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IStorageFactory": {
+        "src": "contracts/Interfaces/IStorageFactory.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "createNewStorage(uint256)",
+          "getStorage(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "TestStorages": {
+        "src": "contracts/TestStorages.sol:11",
+        "version": {
+          "withMetadata": "cdd3ac331b427efe386d4346e054015a8eac2178c6a17baeb73e9b0e0cc59621",
+          "withoutMetadata": "77cb67c0ea9b65b9ee2630412fa9e8efd569614b94b1437aebb8d8bb84f8c2d9",
+          "linkedWithoutMetadata": "77cb67c0ea9b65b9ee2630412fa9e8efd569614b94b1437aebb8d8bb84f8c2d9"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "setAddresses(address)",
+          "storeTest(uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "storageFactory",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_contract(IStorageFactory)29",
+              "contract": "TestStorages",
+              "src": "contracts/TestStorages.sol:12"
+            }
+          ],
+          "types": {
+            "t_contract(IStorageFactory)29": {
+              "label": "contract IStorageFactory",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "IStorage": {
+        "src": "contracts/Interfaces/IStorage.sol:6",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "IStorageFactory": {
+        "src": "contracts/Interfaces/IStorageFactory.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "createNewStorage(uint256)",
+          "getStorage(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1",
+          "flat": false
+        }
+      },
+      "Storage": {
+        "src": "contracts/Storage.sol:12",
+        "version": {
+          "withMetadata": "2dd832a6ab45266115259c7682ec4901accd47d66faaf2e540a5a3693185865d",
+          "withoutMetadata": "96eaec2138955b52d6a8a3c10a8a9e6ee44963735f2f63a729ca2984c236bb92",
+          "linkedWithoutMetadata": "96eaec2138955b52d6a8a3c10a8a9e6ee44963735f2f63a729ca2984c236bb92"
+        },
+        "inherit": [
+          "IStorage"
+        ],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Storage",
+              "src": "contracts/Storage.sol:13"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "StorageFactory": {
+        "src": "contracts/StorageFactory.sol:14",
+        "version": {
+          "withMetadata": "16bf71b04f340bde975bb20295093499ccb796150b7598b26c55454fbac1937e",
+          "withoutMetadata": "bc804ae45bb30a24523f7b8786037aba79bb78fbd9e93e8c43ae9ecb58bef65f",
+          "linkedWithoutMetadata": "bc804ae45bb30a24523f7b8786037aba79bb78fbd9e93e8c43ae9ecb58bef65f"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "createNewStorage(uint256)",
+          "getStorage(uint256)",
+          "allStorages()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_storage",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_array(t_contract(Storage)55)dyn_storage",
+              "contract": "StorageFactory",
+              "src": "contracts/StorageFactory.sol:15"
+            }
+          ],
+          "types": {
+            "t_array(t_contract(Storage)55)dyn_storage": {
+              "label": "contract Storage[]",
+              "numberOfBytes": "32"
+            },
+            "t_contract(Storage)55": {
+              "label": "contract Storage",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "TestStorages": {
+        "src": "contracts/TestClone.sol:11",
+        "version": {
+          "withMetadata": "cb90517fb367bd7d3128ac72c84ddd23a046533fd7ad0de03272a72f891325a5",
+          "withoutMetadata": "77cb67c0ea9b65b9ee2630412fa9e8efd569614b94b1437aebb8d8bb84f8c2d9",
+          "linkedWithoutMetadata": "77cb67c0ea9b65b9ee2630412fa9e8efd569614b94b1437aebb8d8bb84f8c2d9"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "setAddresses(address)",
+          "storeTest(uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "storageFactory",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_contract(IStorageFactory)29",
+              "contract": "TestStorages",
+              "src": "contracts/TestClone.sol:12"
+            }
+          ],
+          "types": {
+            "t_contract(IStorageFactory)29": {
+              "label": "contract IStorageFactory",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
+      "Storage": {
+        "src": "contracts/Storage.sol:10",
+        "version": {
+          "withMetadata": "9adabc19625785fbcd064c78d5db8fdb75bac070df6ca012caab008119d517db",
+          "withoutMetadata": "96eaec2138955b52d6a8a3c10a8a9e6ee44963735f2f63a729ca2984c236bb92",
+          "linkedWithoutMetadata": "96eaec2138955b52d6a8a3c10a8a9e6ee44963735f2f63a729ca2984c236bb92"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "value",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Storage",
+              "src": "contracts/Storage.sol:11"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      },
+      "StorageFactory": {
+        "src": "contracts/StorageFactory.sol:14",
+        "version": {
+          "withMetadata": "e845d816dca0643c79412af1775fe96dfe23de472f4ee440ab6cec50d6fc8176",
+          "withoutMetadata": "ea50e56bef07fed6dd8dff2446f7f7b6cdff7a5766cf0083b948b937250025d3",
+          "linkedWithoutMetadata": "ea50e56bef07fed6dd8dff2446f7f7b6cdff7a5766cf0083b948b937250025d3"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "createNewStorage(uint256)",
+          "allStorages()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_storage",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_array(t_contract(Storage)23)dyn_storage",
+              "contract": "StorageFactory",
+              "src": "contracts/StorageFactory.sol:15"
+            }
+          ],
+          "types": {
+            "t_array(t_contract(Storage)23)dyn_storage": {
+              "label": "contract Storage[]",
+              "numberOfBytes": "32"
+            },
+            "t_contract(Storage)23": {
+              "label": "contract Storage",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.1",
+          "flat": true
+        }
+      }
+    },
+    {
       "IERC20Upgradeable": {
         "src": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol:9",
         "inherit": [],
