@@ -46,6 +46,7 @@ describe('MyToken', function () {
         console.log("All Storage Children: ", STORAGES[0]);
         console.log("Storage MOTHER: ", (await storage.getValue()).toString());
         console.log("Storage Child 1: ", (await testStorages.getValueTest(0)).toString());
+        
 
     });
 });

@@ -1,10 +1,10 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/home/robin/github/clone-upps/contracts/MyTokenV1.sol": {
-      "lastModificationDate": 1661878938807,
-      "contentHash": "07bd8a0aeb34f161bb48bed1d77547f3",
-      "sourceName": "contracts/MyTokenV1.sol",
+    "/home/ubuntu/Documents/GitHub/clone-uups/node_modules/@openzeppelin/contracts-upgradeable/proxy/ClonesUpgradeable.sol": {
+      "lastModificationDate": 1664475469873,
+      "contentHash": "8e47ad05ecb083f95e7e63c58e85c095",
+      "sourceName": "@openzeppelin/contracts-upgradeable/proxy/ClonesUpgradeable.sol",
       "solcConfig": {
         "version": "0.8.11",
         "settings": {
@@ -29,23 +29,16 @@
           }
         }
       },
-      "imports": [
-        "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
-        "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
-        "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol",
-        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
-        "hardhat/console.sol",
-        "./Interfaces/IMyTokenV1.sol"
-      ],
+      "imports": [],
       "versionPragmas": [
         "^0.8.0"
       ],
       "artifacts": [
-        "MyTokenV1"
+        "ClonesUpgradeable"
       ]
     },
-    "/home/robin/github/clone-upps/node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol": {
-      "lastModificationDate": 1661849533132,
+    "/home/ubuntu/Documents/GitHub/clone-uups/node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol": {
+      "lastModificationDate": 1664475470417,
       "contentHash": "b98e2f3a856e6e7f2106fb919bacab9e",
       "sourceName": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
       "solcConfig": {
@@ -82,8 +75,159 @@
         "Initializable"
       ]
     },
-    "/home/robin/github/clone-upps/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol": {
-      "lastModificationDate": 1661849533092,
+    "/home/ubuntu/Documents/GitHub/clone-uups/node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol": {
+      "lastModificationDate": 1664475470417,
+      "contentHash": "eb2268e7f08e65339fdf577dad98c925",
+      "sourceName": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/draft-IERC1822Upgradeable.sol",
+        "../ERC1967/ERC1967UpgradeUpgradeable.sol",
+        "./Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UUPSUpgradeable"
+      ]
+    },
+    "/home/ubuntu/Documents/GitHub/clone-uups/node_modules/@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol": {
+      "lastModificationDate": 1664475469869,
+      "contentHash": "403ce8273abde646bff81558ddf512ad",
+      "sourceName": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/ContextUpgradeable.sol",
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OwnableUpgradeable"
+      ]
+    },
+    "/home/ubuntu/Documents/GitHub/clone-uups/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol": {
+      "lastModificationDate": 1664475470421,
+      "contentHash": "a9ed3c7bc7d9ebb5e34f20829274f088",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Upgradeable"
+      ]
+    },
+    "/home/ubuntu/Documents/GitHub/clone-uups/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1664475469361,
+      "contentHash": "4ff3cd2f6272c9a6516e9ee4f2b967d3",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">= 0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "/home/ubuntu/Documents/GitHub/clone-uups/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol": {
+      "lastModificationDate": 1664475470421,
       "contentHash": "f6a254bc3e3c9c456a7a630fc4cb8ca4",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
       "solcConfig": {
@@ -123,118 +267,8 @@
         "ERC20Upgradeable"
       ]
     },
-    "/home/robin/github/clone-upps/node_modules/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol": {
-      "lastModificationDate": 1661849533052,
-      "contentHash": "d42e87f4fba2b03ab4d3c14cb53d0c51",
-      "sourceName": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
-      "solcConfig": {
-        "version": "0.8.11",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.1"
-      ],
-      "artifacts": [
-        "AddressUpgradeable"
-      ]
-    },
-    "/home/robin/github/clone-upps/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol": {
-      "lastModificationDate": 1661849533122,
-      "contentHash": "a9ed3c7bc7d9ebb5e34f20829274f088",
-      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
-      "solcConfig": {
-        "version": "0.8.11",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IERC20Upgradeable"
-      ]
-    },
-    "/home/robin/github/clone-upps/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol": {
-      "lastModificationDate": 1661849533122,
-      "contentHash": "9efcd5467a7f0bf533910ee8a267adb2",
-      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol",
-      "solcConfig": {
-        "version": "0.8.11",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../IERC20Upgradeable.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IERC20MetadataUpgradeable"
-      ]
-    },
-    "/home/robin/github/clone-upps/node_modules/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol": {
-      "lastModificationDate": 1661849533052,
+    "/home/ubuntu/Documents/GitHub/clone-uups/node_modules/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol": {
+      "lastModificationDate": 1664475469873,
       "contentHash": "6200b84950eb05b4a92a39fd1d6e0f9b",
       "sourceName": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
       "solcConfig": {
@@ -271,10 +305,46 @@
         "ContextUpgradeable"
       ]
     },
-    "/home/robin/github/clone-upps/node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol": {
-      "lastModificationDate": 1661849533152,
-      "contentHash": "eb2268e7f08e65339fdf577dad98c925",
-      "sourceName": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol",
+    "/home/ubuntu/Documents/GitHub/clone-uups/node_modules/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol": {
+      "lastModificationDate": 1664475469873,
+      "contentHash": "d42e87f4fba2b03ab4d3c14cb53d0c51",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "AddressUpgradeable"
+      ]
+    },
+    "/home/ubuntu/Documents/GitHub/clone-uups/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol": {
+      "lastModificationDate": 1664475470613,
+      "contentHash": "9efcd5467a7f0bf533910ee8a267adb2",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol",
       "solcConfig": {
         "version": "0.8.11",
         "settings": {
@@ -300,58 +370,17 @@
         }
       },
       "imports": [
-        "../../interfaces/draft-IERC1822Upgradeable.sol",
-        "../ERC1967/ERC1967UpgradeUpgradeable.sol",
-        "./Initializable.sol"
+        "../IERC20Upgradeable.sol"
       ],
       "versionPragmas": [
         "^0.8.0"
       ],
       "artifacts": [
-        "UUPSUpgradeable"
+        "IERC20MetadataUpgradeable"
       ]
     },
-    "/home/robin/github/clone-upps/node_modules/@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol": {
-      "lastModificationDate": 1661849533142,
-      "contentHash": "403ce8273abde646bff81558ddf512ad",
-      "sourceName": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
-      "solcConfig": {
-        "version": "0.8.11",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../utils/ContextUpgradeable.sol",
-        "../proxy/utils/Initializable.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "OwnableUpgradeable"
-      ]
-    },
-    "/home/robin/github/clone-upps/node_modules/@openzeppelin/contracts-upgradeable/interfaces/draft-IERC1822Upgradeable.sol": {
-      "lastModificationDate": 1661849533072,
+    "/home/ubuntu/Documents/GitHub/clone-uups/node_modules/@openzeppelin/contracts-upgradeable/interfaces/draft-IERC1822Upgradeable.sol": {
+      "lastModificationDate": 1664475469869,
       "contentHash": "a6883cfd85607b16c121a02728369eb3",
       "sourceName": "@openzeppelin/contracts-upgradeable/interfaces/draft-IERC1822Upgradeable.sol",
       "solcConfig": {
@@ -386,8 +415,8 @@
         "IERC1822ProxiableUpgradeable"
       ]
     },
-    "/home/robin/github/clone-upps/node_modules/@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol": {
-      "lastModificationDate": 1661849533082,
+    "/home/ubuntu/Documents/GitHub/clone-uups/node_modules/@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol": {
+      "lastModificationDate": 1664475470417,
       "contentHash": "d1ceeaa35b60471b1c6e50d29d70354a",
       "sourceName": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol",
       "solcConfig": {
@@ -428,8 +457,8 @@
         "ERC1967UpgradeUpgradeable"
       ]
     },
-    "/home/robin/github/clone-upps/node_modules/@openzeppelin/contracts-upgradeable/proxy/beacon/IBeaconUpgradeable.sol": {
-      "lastModificationDate": 1661849533112,
+    "/home/ubuntu/Documents/GitHub/clone-uups/node_modules/@openzeppelin/contracts-upgradeable/proxy/beacon/IBeaconUpgradeable.sol": {
+      "lastModificationDate": 1664475470417,
       "contentHash": "21bffd733b4ca013e125a0ffe2e52254",
       "sourceName": "@openzeppelin/contracts-upgradeable/proxy/beacon/IBeaconUpgradeable.sol",
       "solcConfig": {
@@ -464,8 +493,8 @@
         "IBeaconUpgradeable"
       ]
     },
-    "/home/robin/github/clone-upps/node_modules/@openzeppelin/contracts-upgradeable/utils/StorageSlotUpgradeable.sol": {
-      "lastModificationDate": 1661849533152,
+    "/home/ubuntu/Documents/GitHub/clone-uups/node_modules/@openzeppelin/contracts-upgradeable/utils/StorageSlotUpgradeable.sol": {
+      "lastModificationDate": 1664475469877,
       "contentHash": "731fafe5fdaca6e0749253ab7ce7d3b9",
       "sourceName": "@openzeppelin/contracts-upgradeable/utils/StorageSlotUpgradeable.sol",
       "solcConfig": {
@@ -500,10 +529,10 @@
         "StorageSlotUpgradeable"
       ]
     },
-    "/home/robin/github/clone-upps/contracts/AdminContract.sol": {
-      "lastModificationDate": 1661878546887,
-      "contentHash": "870628312309ba2b926e8fa40fbc29f5",
-      "sourceName": "contracts/AdminContract.sol",
+    "/home/ubuntu/Documents/GitHub/clone-uups/contracts/TestStorages.sol": {
+      "lastModificationDate": 1664475380852,
+      "contentHash": "5bdf14c1c6bd4ac314b8b8940078c5a9",
+      "sourceName": "contracts/TestStorages.sol",
       "solcConfig": {
         "version": "0.8.11",
         "settings": {
@@ -529,357 +558,18 @@
         }
       },
       "imports": [
-        "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
-        "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol",
-        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
-        "@openzeppelin/contracts-upgradeable/proxy/ClonesUpgradeable.sol",
-        "./Interfaces/IContractManager.sol",
-        "./MyTokenV1.sol"
+        "hardhat/console.sol",
+        "./Interfaces/IStorageFactory.sol"
       ],
       "versionPragmas": [
         "^0.8.0"
       ],
       "artifacts": [
-        "AdminContract"
+        "TestStorages"
       ]
     },
-    "/home/robin/github/clone-upps/node_modules/@openzeppelin/contracts-upgradeable/proxy/ClonesUpgradeable.sol": {
-      "lastModificationDate": 1661849533052,
-      "contentHash": "8e47ad05ecb083f95e7e63c58e85c095",
-      "sourceName": "@openzeppelin/contracts-upgradeable/proxy/ClonesUpgradeable.sol",
-      "solcConfig": {
-        "version": "0.8.11",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "ClonesUpgradeable"
-      ]
-    },
-    "/home/robin/github/clone-upps/contracts/Interfaces/IContractManager.sol": {
-      "lastModificationDate": 1661878585067,
-      "contentHash": "eb7d4b6343c0e30d7434916c1e99c9d3",
-      "sourceName": "contracts/Interfaces/IContractManager.sol",
-      "solcConfig": {
-        "version": "0.8.11",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./IMyTokenV1.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IContractManager"
-      ]
-    },
-    "/home/robin/github/clone-upps/contracts/ContractManager.sol": {
-      "lastModificationDate": 1661878304647,
-      "contentHash": "ca3b7e04fd200ec93829adcdbce98b61",
-      "sourceName": "contracts/ContractManager.sol",
-      "solcConfig": {
-        "version": "0.8.11",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./Interfaces/IContractManager.sol",
-        "hardhat/console.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "ContractManager"
-      ]
-    },
-    "/home/robin/github/clone-upps/contracts/Interfaces/IMyTokenV1.sol": {
-      "lastModificationDate": 1661878942237,
-      "contentHash": "bd03070d69033b5694499fd9237a3f76",
-      "sourceName": "contracts/Interfaces/IMyTokenV1.sol",
-      "solcConfig": {
-        "version": "0.8.11",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IMyTokenV1"
-      ]
-    },
-    "/home/robin/github/clone-upps/node_modules/hardhat/console.sol": {
-      "lastModificationDate": 1661849517272,
-      "contentHash": "4ff3cd2f6272c9a6516e9ee4f2b967d3",
-      "sourceName": "hardhat/console.sol",
-      "solcConfig": {
-        "version": "0.8.11",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.4.22 <0.9.0"
-      ],
-      "artifacts": [
-        "console"
-      ]
-    },
-    "/home/robin/github/clone-upps/contracts/Interfaces/ITestClone.sol": {
-      "lastModificationDate": 1661878982817,
-      "contentHash": "4dbb96d0862293e8535d87eb916b52f8",
-      "sourceName": "contracts/Interfaces/ITestClone.sol",
-      "solcConfig": {
-        "version": "0.8.11",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "ITestClone"
-      ]
-    },
-    "/home/robin/github/clone-upps/contracts/Storage.sol": {
-      "lastModificationDate": 1661964484774,
-      "contentHash": "41dd89074586e3e058ac61e4f2d7e23a",
-      "sourceName": "contracts/Storage.sol",
-      "solcConfig": {
-        "version": "0.8.11",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./Interfaces/IStorage.sol"
-      ],
-      "versionPragmas": [
-        ">0.7.0 <0.9.0"
-      ],
-      "artifacts": [
-        "Storage"
-      ]
-    },
-    "/home/robin/github/clone-upps/contracts/StorageFactory.sol": {
-      "lastModificationDate": 1661963325664,
-      "contentHash": "0b23b42df39a8ca7eafa2b8d32593295",
-      "sourceName": "contracts/StorageFactory.sol",
-      "solcConfig": {
-        "version": "0.8.11",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./Storage.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "StorageFactory"
-      ]
-    },
-    "/home/robin/github/clone-upps/contracts/Interfaces/IStorage.sol": {
-      "lastModificationDate": 1661964576114,
-      "contentHash": "e0ccb21ea278b7af3712ec11458dea58",
-      "sourceName": "contracts/Interfaces/IStorage.sol",
-      "solcConfig": {
-        "version": "0.8.11",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IStorage"
-      ]
-    },
-    "/home/robin/github/clone-upps/contracts/Interfaces/IStorageFactory.sol": {
-      "lastModificationDate": 1661963427864,
+    "/home/ubuntu/Documents/GitHub/clone-uups/contracts/Interfaces/IStorageFactory.sol": {
+      "lastModificationDate": 1664475380852,
       "contentHash": "22dbf8decef358f3eab0b9780115f15a",
       "sourceName": "contracts/Interfaces/IStorageFactory.sol",
       "solcConfig": {
@@ -916,10 +606,46 @@
         "IStorageFactory"
       ]
     },
-    "/home/robin/github/clone-upps/contracts/TestStorages.sol": {
-      "lastModificationDate": 1661964800424,
-      "contentHash": "5bdf14c1c6bd4ac314b8b8940078c5a9",
-      "sourceName": "contracts/TestStorages.sol",
+    "/home/ubuntu/Documents/GitHub/clone-uups/contracts/Interfaces/IStorage.sol": {
+      "lastModificationDate": 1664475380852,
+      "contentHash": "e0ccb21ea278b7af3712ec11458dea58",
+      "sourceName": "contracts/Interfaces/IStorage.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IStorage"
+      ]
+    },
+    "/home/ubuntu/Documents/GitHub/clone-uups/contracts/Storage.sol": {
+      "lastModificationDate": 1664475380852,
+      "contentHash": "41dd89074586e3e058ac61e4f2d7e23a",
+      "sourceName": "contracts/Storage.sol",
       "solcConfig": {
         "version": "0.8.11",
         "settings": {
@@ -945,14 +671,87 @@
         }
       },
       "imports": [
-        "hardhat/console.sol",
-        "./Interfaces/IStorageFactory.sol"
+        "./Interfaces/IStorage.sol"
+      ],
+      "versionPragmas": [
+        ">0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "Storage"
+      ]
+    },
+    "/home/ubuntu/Documents/GitHub/clone-uups/contracts/StorageFactory.sol": {
+      "lastModificationDate": 1664475380852,
+      "contentHash": "0b23b42df39a8ca7eafa2b8d32593295",
+      "sourceName": "contracts/StorageFactory.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Storage.sol"
       ],
       "versionPragmas": [
         "^0.8.0"
       ],
       "artifacts": [
-        "TestStorages"
+        "StorageFactory"
+      ]
+    },
+    "/home/ubuntu/Documents/GitHub/clone-uups/contracts/Interfaces/ITestClone.sol": {
+      "lastModificationDate": 1664475380852,
+      "contentHash": "4dbb96d0862293e8535d87eb916b52f8",
+      "sourceName": "contracts/Interfaces/ITestClone.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ITestClone"
       ]
     }
   }
