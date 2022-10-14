@@ -5,8 +5,14 @@ pragma solidity ^0.8.0;
 
 import "./IStorage.sol";
 
-interface IStorageFactory {
+interface ISPFactory {
     function createNewStorage(uint256 _number) external;
 
     function getStorage(uint256 _position) external view returns (IStorage);
+
+    function createNewSP(address asset, address stabilityPool) external;
+
+    function removeSP(address asset) external;
+
+    
 }

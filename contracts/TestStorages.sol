@@ -6,13 +6,13 @@ import "hardhat/console.sol";
 // import "./Interfaces/ITestClone.sol";
 
 // import "./Interfaces/IStorage.sol";
-import "./Interfaces/IStorageFactory.sol";
+import "./Interfaces/ISPFactory.sol";
 
 contract TestStorages {
-    IStorageFactory public storageFactory;
+    ISPFactory public storageFactory;
 
     function setAddresses(address _StorageFactoryAddress) external {
-        storageFactory = IStorageFactory(_StorageFactoryAddress);
+        storageFactory = ISPFactory(_StorageFactoryAddress);
     }
 
     function storeTest(uint256 _storageNumber, uint256 _value) external {

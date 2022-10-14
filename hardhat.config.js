@@ -3,6 +3,7 @@
 // require('hardhat');
 
 require('@nomiclabs/hardhat-ethers');
+require("@nomiclabs/hardhat-truffle5");
 require('@openzeppelin/hardhat-upgrades');
 
 const accounts = require("./hardhatAccountsList2k.js");

@@ -2,6 +2,7 @@
 
 const { ethers, upgrades } = require('hardhat');
 const hardhatConfig = require('hardhat/config')
+const helper = require("../helper.js")
 
 // describe('MyToken', async accounts => {
 //     const [
@@ -10,7 +11,7 @@ const hardhatConfig = require('hardhat/config')
 //         defaulter_1, defaulter_2, defaulter_3, defaulter_4, whale,
 //         A, B, C, D, E] = accounts;
 describe('MyToken', function () {
-
+    
     it('deploys', async function () {
 
         const accounts = await ethers.getSigners()
@@ -19,26 +20,30 @@ describe('MyToken', function () {
             alice, bob, carol, dennis, erin, freddy, greta, harry, ida,
             A, B, C, D, E,
             whale, defaulter_1, defaulter_2, defaulter_3, defaulter_4] = accounts;
-
-        // Get Contract Factories
+        
+        let erc20Address = await helper.deployTesterContractsHardhat();
+        // // Get Contract Factories
         const Storage = await ethers.getContractFactory('Storage');
-        const StorageFactory = await ethers.getContractFactory('StorageFactory');
+        const StorageFactory = await ethers.getContractFactory('SPFactory');
         const TestStorages = await ethers.getContractFactory('TestStorages');
 
-        // Deploy contracts
+        // // Deploy contracts
         const storage = await Storage.deploy();
         const storageFactory = await StorageFactory.deploy();
         const testStorages = await TestStorages.deploy();
 
-        // Set addresses
+        // // Set addresses
         await testStorages.setAddresses(storageFactory.address);
 
 
 
         await storage.store(10);
       
-        // Create new Storage Contract
+        // // Create new Storage Contract
         await storageFactory.createNewStorage(99);
+        // Fails somehow
+        // TestStorage is Error: invalid address or ENS name (argument="name", value="[object Object]", code=INVALID_ARGUMENT, version=contracts/5.7.0)
+        // await storageFactory.createNewSP(erc20Address, testStorages);
         await testStorages.storeTest(0, 55);
 
      

@@ -1,8 +1,26 @@
 {
   "_format": "hh-sol-artifact-1",
-  "contractName": "IStorageFactory",
-  "sourceName": "contracts/Interfaces/IStorageFactory.sol",
+  "contractName": "ISPFactory",
+  "sourceName": "contracts/Interfaces/ISPFactory.sol",
   "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "stabilityPool",
+          "type": "address"
+        }
+      ],
+      "name": "createNewSP",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
     {
       "inputs": [
         {
@@ -33,6 +51,19 @@
         }
       ],
       "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        }
+      ],
+      "name": "removeSP",
+      "outputs": [],
+      "stateMutability": "nonpayable",
       "type": "function"
     }
   ],
