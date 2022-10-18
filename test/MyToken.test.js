@@ -21,7 +21,8 @@ describe('MyToken', function () {
             A, B, C, D, E,
             whale, defaulter_1, defaulter_2, defaulter_3, defaulter_4] = accounts;
         
-        let erc20Address = await helper.deployTesterContractsHardhat();
+        let erc20 = await helper.deployTesterContractsHardhat();
+        let erc20Address = erc20.address;
         // // Get Contract Factories
         const Storage = await ethers.getContractFactory('Storage');
         const StorageFactory = await ethers.getContractFactory('SPFactory');
