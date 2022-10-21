@@ -11,7 +11,7 @@ const helper = require("../helper.js")
 //         defaulter_1, defaulter_2, defaulter_3, defaulter_4, whale,
 //         A, B, C, D, E] = accounts;
 describe('MyToken', function () {
-    
+
     it('deploys', async function () {
 
         const accounts = await ethers.getSigners()
@@ -20,9 +20,9 @@ describe('MyToken', function () {
             alice, bob, carol, dennis, erin, freddy, greta, harry, ida,
             A, B, C, D, E,
             whale, defaulter_1, defaulter_2, defaulter_3, defaulter_4] = accounts;
-        
-        let erc20 = await helper.deployTesterContractsHardhat();
-        let erc20Address = erc20.address;
+
+        let contracts = await helper.deployTesterContractsHardhat();
+        let erc20Address = contracts.erc20.address;
         // // Get Contract Factories
         const Storage = await ethers.getContractFactory('Storage');
         const StorageFactory = await ethers.getContractFactory('SPFactory');
@@ -39,20 +39,23 @@ describe('MyToken', function () {
 
 
         await storage.store(10);
-      
+
         // // Create new Storage Contract
         await storageFactory.createNewStorage(99);
         // Fails somehow
         // TestStorage is Error: invalid address or ENS name (argument="name", value="[object Object]", code=INVALID_ARGUMENT, version=contracts/5.7.0)
-        // await storageFactory.createNewSP(erc20Address, testStorages);
+
+        //  Deploy new StorageContract and add its address to the asset stabilityPool mapping
+        const storage1 = await Storage.deploy();
+        await storageFactory.createNewSP(erc20Address, storage1.address);
         await testStorages.storeTest(0, 55);
 
-     
+
         const STORAGES = await storageFactory.allStorages();
         console.log("All Storage Children: ", STORAGES[0]);
         console.log("Storage MOTHER: ", (await storage.getValue()).toString());
         console.log("Storage Child 1: ", (await testStorages.getValueTest(0)).toString());
-        
+
 
     });
 });
