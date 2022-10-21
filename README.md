@@ -3,6 +3,10 @@
 Steps:
 
 - [ ] Implement mapping of addresses for clones of stabilitypool rather then array
+- [ ] Test address mapping in clone-uups
+- [ ] test SP in KUMO in deploymenthelpers with one asset
+- [ ] get AssetinSPFun. GetStabilityPoolAddress for right stabiility pool
+- [ ] mint token (asset) in wallets in deploymenthelpers
 - [ ] https://github.com/kumodao/kumo-protocol/issues/205
 - [ ] https://github.com/kumodao/kumo-protocol/issues/204
 - [ ] depoly a stabilitypool clone as clone and check gas usage
